@@ -42,6 +42,14 @@ dependencies:
   http: ^1.1.0
   archive: ^3.4.9
   path_provider: ^2.1.1
+  circular_chart_flutter: ^0.0.2
+  fl_chart: ^0.65.0
+  semicircle_indicator: ^1.1.1
+  chat_gpt_sdk: ^2.2.5
+  intl: ^0.19.0
+  firebase_auth: ^4.15.3
+  firebase_core: ^2.24.2
+  shared_preferences: ^2.2.2
   # epubviewer2: ^0.0.4
 
 dev_dependencies:
@@ -54,12 +62,14 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
+  generate: true
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

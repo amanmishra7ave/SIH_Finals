@@ -22,7 +22,7 @@ class casesInformation extends StatelessWidget {
           ),
         ),
         const Text(
-          "Hello, Aman Mishra! Your overall performance of this week is ready",
+          "Hello, Aman Mishra! Your overall performance\n of this week is ready",
           style: TextStyle(
             color: Colors.grey,
           ),
@@ -36,8 +36,8 @@ class casesInformation extends StatelessWidget {
               CircularPercentIndicator(
                 startAngle: 330,
                 // progressColor: Colors.greenAccent,
-                progressColor: Colors.green,
-                backgroundColor: const Color.fromARGB(255, 2, 1, 55),
+                progressColor: Colors.blue,
+                backgroundColor: Colors.grey,
                 center: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

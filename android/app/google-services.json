@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "422150777474",
+    "project_id": "flutterlogin-be495",
+    "storage_bucket": "flutterlogin-be495.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422150777474:android:030504317b16eee38f229b",
+        "android_client_info": {
+          "package_name": "com.example.sih_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRT8BL3lHiPNd04bjPwQXyKb-BF7501KM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

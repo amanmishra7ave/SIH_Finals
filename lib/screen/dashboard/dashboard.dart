@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sih_app/common/bottomNavigation_widget.dart';
+import 'package:sih_app/config/color/screen_color.dart';
 import 'package:sih_app/screen/dashboard/CasesInformation.dart';
 // import 'package:kycframwork/screens/dashboard/CasesInformation.dart';
 
@@ -13,14 +15,15 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 2, 2, 66),
+      backgroundColor: AppColor.backgroundColor,
+      // backgroundColor: const Color.fromARGB(255, 2, 2, 66),
       body: SizedBox(
         width: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(
-              height: 30,
+              height: 60,
             ),
             Title(
                 color: Colors.blue,
@@ -36,7 +39,9 @@ class _DashboardState extends State<Dashboard> {
             ),
             Container(
                 decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 5, 14, 95),
+                    color: Colors.grey[600],
+                    // backgroundBlendMode: Colors.grey,
+                    // color: const Color.fromARGB(255, 5, 14, 95),
                     borderRadius: BorderRadius.circular(20)),
                 width: 333,
                 height: 500,
@@ -47,6 +52,7 @@ class _DashboardState extends State<Dashboard> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationbar_widget(),
     );
   }
 }

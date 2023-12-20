@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class smalldetails extends StatelessWidget {
   const smalldetails({
     super.key,
@@ -8,10 +7,8 @@ class smalldetails extends StatelessWidget {
     required this.stringValue,
   });
 
-final String ? noOfCases;
-final String ? stringValue;
-
-
+  final String? noOfCases;
+  final String? stringValue;
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +16,9 @@ final String ? stringValue;
       width: 145,
       height: 48,
       decoration: BoxDecoration(
-      color: const Color.fromARGB(255, 7, 1, 41),
-      borderRadius: BorderRadius.circular(10)
-
-      ),
+          color: Colors.grey, borderRadius: BorderRadius.circular(10)),
       child: Padding(
-        padding: const EdgeInsets.only(left:8.0,top: 4,right: 2),
+        padding: const EdgeInsets.only(left: 8.0, top: 4, right: 2),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -32,14 +26,14 @@ final String ? stringValue;
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                stringValue ?? "Total no. of cases ",
+                  stringValue ?? "Total no. of cases ",
                   style: const TextStyle(
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontSize: 12,
                   ),
                 ),
                 Text(
-                 noOfCases ?? "567",
+                  noOfCases ?? "567",
                   style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -53,12 +47,12 @@ final String ? stringValue;
             ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(8)),
+                  color: Colors.blue[400],
+                  borderRadius: BorderRadius.circular(8)),
               // color: Colors.blue,
               width: 28,
               height: 28,
-            )                                
+            )
           ],
         ),
       ),

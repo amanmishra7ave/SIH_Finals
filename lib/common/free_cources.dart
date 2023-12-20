@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sih_app/screen/CoursesStream/12to10.dart';
+import 'package:sih_app/screen/home/Home_Screen.dart';
 
 class Free_Courses extends StatelessWidget {
   const Free_Courses({
@@ -28,11 +30,24 @@ class Free_Courses extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CircleAvatar(
-                  radius: 35,
-                  backgroundColor: Colors.blueAccent[200],
-                  backgroundImage: AssetImage(
-                    "images/tools.png",
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FirstCourse(
+                          particularUrl:
+                              "https://www.youtube.com/watch?v=Vl5Rb7Agd7g&ab_channel=NCERTWallah",
+                        ),
+                      ),
+                    );
+                  },
+                  child: CircleAvatar(
+                    radius: 35,
+                    backgroundColor: Colors.blueAccent[200],
+                    backgroundImage: AssetImage(
+                      "images/tools.png",
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -50,35 +65,61 @@ class Free_Courses extends StatelessWidget {
           SizedBox(
             width: 5,
           ),
-          Container(
-            width: 130,
-            height: 130,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              // color: const Color.fromARGB(26, 233, 223, 223),
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                CircleAvatar(
-                  radius: 35,
-                  backgroundColor: Colors.blueAccent[200],
-                  backgroundImage: AssetImage(
-                    "images/biology.png",
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const FirstCourse(
+                    particularUrl:
+                        "https://www.youtube.com/watch?v=Vl5Rb7Agd7g&ab_channel=NCERTWallah",
                   ),
                 ),
-                SizedBox(
-                  height: 3,
-                ),
-                Text(
-                  "Biology",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+              );
+            },
+            child: Container(
+              width: 130,
+              height: 130,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                // color: const Color.fromARGB(26, 233, 223, 223),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const FirstCourse(
+                            particularUrl:
+                                "https://www.youtube.com/watch?v=Vl5Rb7Agd7g&ab_channel=NCERTWallah",
+                          ),
+                        ),
+                      );
+                    },
+                    child: CircleAvatar(
+                      radius: 35,
+                      backgroundColor: Colors.blueAccent[200],
+                      backgroundImage: AssetImage(
+                        "images/biology.png",
+                      ),
+                    ),
                   ),
-                ),
-              ],
+                  SizedBox(
+                    height: 3,
+                  ),
+                  Text(
+                    "Biology",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           SizedBox(
@@ -105,18 +146,28 @@ class Free_Courses extends StatelessWidget {
                 //   ),
                 // ), // CircleAvatar(
 
-                CircleAvatar(
-                  radius: 35,
-                  backgroundColor: Colors.blueAccent[200],
-                  // backgroundImage: AssetImage(
-                  // "images/history.png",
-                  // ),
-                  child: ClipOval(
-                    child: Image.asset(
-                      "images/history.png",
-                      fit: BoxFit.cover,
-                      width: 70,
-                      height: 70,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FirstCourse(
+                          particularUrl:
+                              "https://www.youtube.com/watch?v=Vl5Rb7Agd7g&ab_channel=NCERTWallah",
+                        ),
+                      ),
+                    );
+                  },
+                  child: CircleAvatar(
+                    radius: 35,
+                    backgroundColor: Colors.blueAccent[200],
+                    child: ClipOval(
+                      child: Image.asset(
+                        "images/history.png",
+                        fit: BoxFit.cover,
+                        width: 70,
+                        height: 70,
+                      ),
                     ),
                   ),
                 ),
@@ -146,10 +197,23 @@ class Free_Courses extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CircleAvatar(
-                  radius: 35,
-                  backgroundColor: Colors.blueAccent[200],
-                  backgroundImage: AssetImage("images/eng.png"),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FirstCourse(
+                          particularUrl:
+                              "https://www.youtube.com/watch?v=Vl5Rb7Agd7g&ab_channel=NCERTWallah",
+                        ),
+                      ),
+                    );
+                  },
+                  child: CircleAvatar(
+                    radius: 35,
+                    backgroundColor: Colors.blueAccent[200],
+                    backgroundImage: AssetImage("images/eng.png"),
+                  ),
                 ),
                 SizedBox(
                   height: 3,
